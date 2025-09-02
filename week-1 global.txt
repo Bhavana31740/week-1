@@ -1,0 +1,14 @@
+import pandas as pd
+
+import numpy as np
+df = pd.read_csv("global-energy-statistics.csv")
+
+print("Dataset Info:")
+
+print(df.info())
+print("\nDataset Description:")
+
+print(df.describe())
+print("\nMissing Values per Column:")
+
+print(df.isnull().sum())
